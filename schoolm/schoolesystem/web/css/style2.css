@@ -1,0 +1,14 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v11/dI-qzxlKVQA6TUC5RKSb3xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v11/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}

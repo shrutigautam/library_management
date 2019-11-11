@@ -1,0 +1,51 @@
+
+
+#mainContent {
+	padding: 0 20px; 
+	background: #FFFFFF;
+}
+#footer { 
+	padding: 0 10px; 
+	background:#000066;
+	width:100%;
+} 
+#footer p {
+	margin: 0; 
+	padding: 10px 0;
+}
+#personal_info{
+    display:block;
+}
+#contact_detail{
+    display: none;
+}
+#Education_detail{
+    display: none;
+}
+#Document_check_list{
+    display: none;
+}
+#Welfare{
+    display: none;
+}
+#li1{
+    background: #666666;
+}
+#li2{
+    background:  #990000;
+}
+#li3{
+    background:  #990000;
+}
+#li4{
+    background:  #990000;
+}
+#li5{
+    background:  #990000;
+}
+.style1 {font-weight: bold}
+.style2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.style3 {font-size: 18px; font-weight: bold; }

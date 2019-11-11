@@ -1,0 +1,310 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2016, 12:56:22 PM
+    Author     : hp
+*/
+*{margin: 0; padding: 0}
+ 
+body{
+ font-family:'Open Sans';
+ }
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #666666;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    width: 100%;
+}
+
+.div_heading {
+    margin-left: 10px;
+    color: #666;
+}
+
+#personal_info, #official_info, #control {          /* employee detail start */
+    width: 100%;
+    
+}
+#personal_info {
+    border: 1px solid #666;
+    height: 290px;
+    position: relative;
+}
+#personal_info_div1 {
+    width: 26%;
+    position: relative;
+}
+#personal_info_div2 {
+    width: 33%;
+}
+#personal_info_div3 {
+    width: 39.7%;
+}
+#personal_info_div1, #personal_info_div2 {
+    border-right: 1px solid #ccc;
+}
+#personal_info_div1, #personal_info_div2, #personal_info_div3 {
+    
+    float: left;
+    margin-left: .3%;
+    height: 225px;
+    margin-top: 4px;
+}
+
+#name, #short_name, #fname, #husband, #dob, #category, #pan_no, #phone, #mobile {
+    margin-top: 6px;
+}
+
+#employee_id input {
+    margin-left: 25px;
+    
+}
+#name input {
+    margin-left: 68px;
+    text-transform: uppercase;
+    position: relative;
+}
+#fname input {
+    margin-left: 66px;
+    text-transform: uppercase;
+}
+#spouse input {
+    margin-left: 60px;
+    text-transform: uppercase;
+}
+#dob input {
+    margin-left: 22px;
+}
+#category select {
+    margin-left: 50px;
+    width: 100px;
+}
+#maritial_status select {
+    margin-left: 39px;
+    width: 100px;
+}
+#sex, #email {
+    margin-top: 10px;
+}
+#gender select {
+    margin-left: 100px;
+    width: 100px;
+}
+#email input {
+    margin-left: 87px;
+}
+#pan_no input {
+    margin-left: 68px;
+}
+#phone input {
+    margin-left: 85px;
+}
+#mobile input {
+    margin-left: 80px;
+}
+#text_permanent, #text_present {
+    margin-top: 12px;
+}
+#text_permanent, #permanent_address textarea {
+    float: left;
+}
+#permanent_address textarea{
+    margin-left: 26px;
+    resize: none;
+    text-transform: uppercase;
+}
+#permanent_address_city_state_pin {
+    margin-top: 72px;
+}
+.city_box, .state_box, .pin_box {
+    display: inline;
+}
+#permanent_address_city_state_pin .city_box {
+    margin-left: 57px;
+}
+.city_box, .state_box {
+    width: 100px;
+}
+.pin_box {
+    width: 100px;
+}
+#present_address {
+    margin-top: 6px;
+}
+#present_address textarea {
+    margin-left: 47px;
+    resize: none;
+    text-transform: uppercase;
+}
+#present_address_city_state_pin {
+    margin-top: 70px;
+}
+#check_box_btn {
+    width: 20px;
+    height:30px;
+    margin-left: 5px;
+}
+#check_box label {
+    margin-left: 5px;
+}
+#text_present, #present_address textarea, #check_box_btn {
+    float: left;
+}
+#present_address_city_state_pin .city_box {
+    margin-left: 57px;
+}
+
+#official_info {
+    border: 1px solid #666;
+    margin-top: 5px;
+    height: 220px;
+    position: relative;
+}
+#official_info_div1, #official_info_div2, #official_info_div3 {
+    float: left;
+    margin-left: .3%;
+    height: 150px;
+    margin-top: 4px;
+}
+#official_info_div1 {
+    width: 39.7%;
+    border-right: 1px solid #ccc;
+   
+}
+#official_info_div2 {
+    width: 33%;
+    border-right: 1px solid #ccc;
+}
+#official_info_div3 {
+    width: 26%;
+}
+#department select {
+    margin-left: 25px;
+    width: 300px;
+}
+
+#designation select {
+    margin-left: 24px;
+    width: 300px;
+    margin-top: 10px;
+}
+#code input {
+    margin-left: 64px;
+    margin-top: 10px;
+}
+#joining_date input {
+    margin-left: 40px;
+}
+#employee_status, #employee_status, #employee_type, #salary {
+    margin-top: 10px;
+}
+#employee_status select {
+    margin-left: 84px;
+    width: 100px;
+}
+#employee_type input{
+    margin-left: 18px;
+}
+#salary input {
+    margin-left: 41px;
+}
+#employee_img {
+    border: 1px solid #666;
+    height: 120px;
+    width: 100px;
+}
+#img_upload, #img_choose {
+    float: left;
+     margin-top: 10px;
+}
+#img_choose {
+    width:210px;
+   
+}
+#img_upload {
+    margin-left: 30px;
+}
+#control {
+    margin-top: 5px;
+}
+#control #add_btn {
+    width: 50px;
+}                               /* employee detail end */
+
+#faculty {
+   
+    width: 100%;
+}
+#specialized_sub {
+    float:left;
+    border: 1px solid #666;
+    width: 35%;
+    height: 400px;
+}
+#selected_sub {
+    float: right;
+    border: 1px solid #666;
+    width: 65%;
+    height: 400px;
+}
+#subject_table {
+    border: 1px solid #ccc;
+    width: 96%;
+    margin-left: 10px;
+    background-color: #f1f1f1;
+    height: 340px;
+    overflow: auto;
+}
+
+#selected_subtable {
+    border: 1px solid #ccc;
+    width: 96%;
+    margin-left: 10px;
+    background-color: #f1f1f1;
+    height: 340px;
+    overflow: auto;
+}
+
+#subject_table td input {
+    margin: 0 20px 0 10px;
+}

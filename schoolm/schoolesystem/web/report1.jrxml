@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b28bc51-8b3c-44be-a8ed-652dd7e3f61b">
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     enquiry_tab.`enquiry_id` AS enquiry_tab_enquiry_id,
+     enquiry_tab.`std_name` AS enquiry_tab_std_name,
+     enquiry_tab.`std_dob` AS enquiry_tab_std_dob,
+     enquiry_tab.`std_fname` AS enquiry_tab_std_fname,
+     enquiry_tab.`std_foccupation` AS enquiry_tab_std_foccupation,
+     enquiry_tab.`std_mname` AS enquiry_tab_std_mname,
+     enquiry_tab.`std_address` AS enquiry_tab_std_address,
+     enquiry_tab.`std_city` AS enquiry_tab_std_city,
+     enquiry_tab.`std_gender` AS enquiry_tab_std_gender,
+     enquiry_tab.`std_email` AS enquiry_tab_std_email,
+     enquiry_tab.`std_class` AS enquiry_tab_std_class,
+     enquiry_tab.`std_school` AS enquiry_tab_std_school,
+     enquiry_tab.`std_parents` AS enquiry_tab_std_parents,
+     enquiry_tab.`std_mobile` AS enquiry_tab_std_mobile,
+     enquiry_tab.`std_landline` AS enquiry_tab_std_landline,
+     enquiry_tab.`std_alternateno` AS enquiry_tab_std_alternateno,
+     enquiry_tab.`std_category` AS enquiry_tab_std_category,
+     enquiry_tab.`std_fincome` AS enquiry_tab_std_fincome,
+     enquiry_tab.`std_admissionmode` AS enquiry_tab_std_admissionmode,
+     enquiry_tab.`std_admissionplace` AS enquiry_tab_std_admissionplace,
+     enquiry_tab.`std_remark` AS enquiry_tab_std_remark,
+     enquiry_tab.`date` AS enquiry_tab_date
+FROM
+     `enquiry_tab` enquiry_tab]]>
+	</queryString>
+	<field name="enquiry_tab_enquiry_id" class="java.lang.String"/>
+	<field name="enquiry_tab_std_name" class="java.lang.String"/>
+	<field name="enquiry_tab_std_dob" class="java.sql.Date"/>
+	<field name="enquiry_tab_std_fname" class="java.lang.String"/>
+	<field name="enquiry_tab_std_foccupation" class="java.lang.String"/>
+	<field name="enquiry_tab_std_mname" class="java.lang.String"/>
+	<field name="enquiry_tab_std_address" class="java.lang.String"/>
+	<field name="enquiry_tab_std_city" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_gender" class="java.lang.String"/>
+	<field name="enquiry_tab_std_email" class="java.lang.String"/>
+	<field name="enquiry_tab_std_class" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_school" class="java.lang.String"/>
+	<field name="enquiry_tab_std_parents" class="java.lang.String"/>
+	<field name="enquiry_tab_std_mobile" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_landline" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_alternateno" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_category" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_fincome" class="java.lang.Integer"/>
+	<field name="enquiry_tab_std_admissionmode" class="java.lang.String"/>
+	<field name="enquiry_tab_std_admissionplace" class="java.lang.String"/>
+	<field name="enquiry_tab_std_remark" class="java.lang.String"/>
+	<field name="enquiry_tab_date" class="java.sql.Date"/>
+	<group name="enquiry_tab_enquiry_id">
+		<groupExpression><![CDATA[$F{enquiry_tab_enquiry_id}]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<textField>
+					<reportElement style="SubTitle" x="47" y="13" width="506" height="24" forecolor="#CC0000" uuid="f249c63a-0701-40dc-99f8-7df190b1f0a7"/>
+					<textElement>
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{enquiry_tab_enquiry_id}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement mode="Opaque" x="0" y="13" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC" uuid="2e11f0a6-8e70-426a-a304-8c1cefbc613f"/>
+				</rectangle>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="275" y="0" width="300" height="64" uuid="b2e3c40a-d250-4c43-a306-d69de526c22a"/>
+				<imageExpression><![CDATA["leaf_banner_red.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="79071c9a-61e0-4f06-a4ac-ff09af8853d6"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Leaf Red Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="117" y="46" width="157" height="22" uuid="c8f99578-4cf3-47d3-86f5-7add044df6bd"/>
+				<text><![CDATA[Leaf Red SubTitle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="0f02890b-c397-4498-848e-689fb70f7846"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="26" height="15" uuid="a8829104-a252-4a11-a673-27baebd8f480"/>
+				<text><![CDATA[enquiry_tab_std_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="26" y="19" width="26" height="15" uuid="99fd60f0-048a-4319-824b-439af217c006"/>
+				<text><![CDATA[enquiry_tab_std_dob]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="52" y="19" width="26" height="15" uuid="861010c6-061a-4774-8fe1-03f6e888f146"/>
+				<text><![CDATA[enquiry_tab_std_fname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="78" y="19" width="26" height="15" uuid="54327bb3-1333-46f2-8350-d359d33a8d02"/>
+				<text><![CDATA[enquiry_tab_std_foccupation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="104" y="19" width="26" height="15" uuid="14b0ba48-92ae-41b4-8329-80c3787fa5ae"/>
+				<text><![CDATA[enquiry_tab_std_mname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="130" y="19" width="26" height="15" uuid="79fe9934-0d6e-407f-beb9-6784b8f51865"/>
+				<text><![CDATA[enquiry_tab_std_address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="156" y="19" width="26" height="15" uuid="54b5744c-8146-4454-8da8-22f7e25dc5a5"/>
+				<text><![CDATA[enquiry_tab_std_city]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="182" y="19" width="26" height="15" uuid="266e9902-2af9-484e-b2cb-b6b1bab6d2af"/>
+				<text><![CDATA[enquiry_tab_std_gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="208" y="19" width="26" height="15" uuid="78c09f8c-97e5-4175-8d98-84ec20ce6f7e"/>
+				<text><![CDATA[enquiry_tab_std_email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="234" y="19" width="26" height="15" uuid="a1d1b5db-e6fd-43ef-87b7-b7d07ed63f22"/>
+				<text><![CDATA[enquiry_tab_std_class]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="260" y="19" width="26" height="15" uuid="20ccc97b-f1f2-422e-a9df-01f3ab202ce4"/>
+				<text><![CDATA[enquiry_tab_std_school]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="286" y="19" width="26" height="15" uuid="39358581-d268-4cf8-affc-957b2417bd4c"/>
+				<text><![CDATA[enquiry_tab_std_parents]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="312" y="19" width="26" height="15" uuid="3240e4c1-eeaa-4b22-bdb3-5dc298eb9843"/>
+				<text><![CDATA[enquiry_tab_std_mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="338" y="19" width="26" height="15" uuid="b68e9037-911c-491e-8007-8b31e50d1260"/>
+				<text><![CDATA[enquiry_tab_std_landline]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="364" y="19" width="26" height="15" uuid="9030990c-72b3-42c6-bd3f-78200b08bb93"/>
+				<text><![CDATA[enquiry_tab_std_alternateno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="390" y="19" width="26" height="15" uuid="636e463c-5a46-4696-a383-6c557413a9e1"/>
+				<text><![CDATA[enquiry_tab_std_category]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="416" y="19" width="26" height="15" uuid="9b117aef-68fa-4cfa-b70a-023eaa9af02b"/>
+				<text><![CDATA[enquiry_tab_std_fincome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="442" y="19" width="26" height="15" uuid="59d1c0b4-81f8-4e3f-91c3-ff9b9a8c041c"/>
+				<text><![CDATA[enquiry_tab_std_admissionmode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="468" y="19" width="26" height="15" uuid="401e503e-2047-489a-b040-7cecaf42a42e"/>
+				<text><![CDATA[enquiry_tab_std_admissionplace]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="494" y="19" width="26" height="15" uuid="346aef91-29d2-4b34-9d01-a88f27d5afc1"/>
+				<text><![CDATA[enquiry_tab_std_remark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="520" y="19" width="26" height="15" uuid="cc8a5c0b-c9d6-4e9c-962d-1f583e3c42af"/>
+				<text><![CDATA[enquiry_tab_date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="5e0bda1a-d9ea-49ec-b2c4-536192e52985"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="26" height="15" uuid="417f5743-c303-4d3d-9f52-e42841a746e0"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="26" y="0" width="26" height="15" uuid="60663f9d-5010-4d3a-b65c-db3a0deb0022"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="52" y="0" width="26" height="15" uuid="c4eb19e8-899e-4d95-95d9-8c6d04f363d0"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="78" y="0" width="26" height="15" uuid="9b7f8635-3182-4db5-9e6a-6fbabbe6fd2d"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_foccupation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="104" y="0" width="26" height="15" uuid="243c3326-ed43-4302-aee0-a8de1d0d57f3"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_mname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="130" y="0" width="26" height="15" uuid="faa7746b-94ac-4b15-b773-9a5841d1fff9"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="156" y="0" width="26" height="15" uuid="edaed567-c0d8-4306-8a4d-6caf6f82fb36"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_city}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="182" y="0" width="26" height="15" uuid="9c4a6a4d-350d-4848-8cde-61285e7cee53"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="208" y="0" width="26" height="15" uuid="74d07214-a50e-4acb-ab19-6f0fe60e0cce"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="234" y="0" width="26" height="15" uuid="7bc7873d-2b1a-48c9-999a-68cc667c9abe"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_class}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="260" y="0" width="26" height="15" uuid="3776e1ba-3a85-4e0a-977b-d1ead4008109"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_school}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="286" y="0" width="26" height="15" uuid="69b97957-f28d-4673-b96a-d8382fcb3838"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_parents}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="312" y="0" width="26" height="15" uuid="8c7ffd10-3229-4955-bb4a-d32df8ef6760"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="338" y="0" width="26" height="15" uuid="36328a2b-e1b1-4ff8-af1f-684bffeb457c"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_landline}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="364" y="0" width="26" height="15" uuid="13313506-6f57-49fc-93a7-4ba6727dcdfb"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_alternateno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="390" y="0" width="26" height="15" uuid="177638ea-2d62-469f-b28e-35b5e131f404"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_category}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="416" y="0" width="26" height="15" uuid="df8fcb81-e81d-4c55-9075-48114d2d2925"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_fincome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="442" y="0" width="26" height="15" uuid="9998aff6-c3b9-4c0a-9dcf-14ed17abb4b7"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_admissionmode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="468" y="0" width="26" height="15" uuid="2ee35830-5ac3-49ab-ad50-21ddbf41901f"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_admissionplace}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="494" y="0" width="26" height="15" uuid="9a98f506-48c2-4a8b-a4ed-746ab5e3a884"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_std_remark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="520" y="0" width="26" height="15" uuid="190cdd8f-fd33-409d-b06a-4bdfd08b0f3e"/>
+				<textFieldExpression><![CDATA[$F{enquiry_tab_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="df62f895-9bfb-4835-b65b-cf8c8fdf2a0b"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="52ef6787-b9f7-4cb9-80b9-f4bbba957a1c"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="6352d0fa-e85f-44f5-a01f-50d9d380f6b2"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="0f711ab2-1db6-425e-ab12-ec8cf93a1cf8"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

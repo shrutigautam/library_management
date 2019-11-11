@@ -1,0 +1,358 @@
+ *{padding:0; margin:0}
+ 
+#main-content {
+     margin: 2% 0 0 28%;
+    width:70%;
+    height:auto;
+}
+
+ 
+ #nav {
+        
+}
+
+ul.topnav {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#666; 
+	overflow:hidden;
+}
+
+ul.topnav li {
+	float:left;
+}
+
+
+ul.topnav li:last-child {
+	float:right;
+	padding-right:30px;
+}
+
+ul.topnav li a {
+	display:block;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	padding:14px;
+
+	
+}
+@media screen and (min-width:821px) {
+    font-size:16px;
+
+}
+
+ul.topnav li a:hover  {
+	background-color:#f1f1f1;
+	color:black;
+        text-decoration: none;
+}
+
+
+/* side navigation */
+
+
+#side-nav {
+    width:30%;
+    height:auto;
+}
+
+#nav-list {
+    margin: 9% 0 0 28%;
+    width:50%;
+    height: auto;
+}
+
+#nav-list p {
+    border-bottom: 4px solid #666;
+    font-size: 20px;
+}
+
+#nav-list li {
+    margin: 2px 0;
+    padding: 0 1em;
+}
+
+ul.nav-list li {
+    list-style-type: none;
+    margin-top: 2px;
+    background-color: #d0d0d0;
+}
+
+
+ul.nav-list li a {
+    text-decoration: none;
+    display:block;
+    margin-top:-5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color:#000;
+
+}    
+    
+ #nav-list a:before {
+    content:"";
+    width:0;
+    height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-left:7px solid orange;
+    position:relative;
+    display: block;
+    left: -0.9em;
+    top: 1em;
+    
+}
+
+ul.nav-list li:hover {
+    background-color: #666;
+    color:white;
+}
+
+#nav-btn {
+    visibility: hidden;
+}
+/*#side-nav, #main-content {
+    float:left;
+
+}*/
+
+
+@media screen and (max-width:821px) {
+    ul.topnav li:first-child {float:left; padding-left: 30px; font-size: 24px;}
+    ul.topnav li:nth-child(2){padding-top: 48px}
+    ul.topnav li a {padding:8px;}
+    ul.topnav li:last-child {position: relative;top:0px;right: 5px; }
+    ul.topnav li {float:none;}
+    #nav-btn {visibility: visible;}
+    ul.topnav li.btn-menu {display:none;}
+    .topnav a.log{padding-top: 16px; padding-bottom: 14px;}
+     #nav-list a:before {top:1.1em;}
+}
+
+@media screen and (max-width:754px) {
+    #nav-list p {font-size: 18px;}
+    ul.nav-list li a {font-size: 14px;}
+}
+@media screen and (max-width:725px) {
+    #nav-list a:before {top:1.2em;}
+}
+@media screen and (max-width:699px) {
+    #nav-list a:before {top:1.25em;}
+    #nav-list {margin-left: 26%;width:52%}
+}
+@media screen and (max-width:660px) {
+    #nav-list {margin-left: 24%;width:54%}
+}
+@media screen and (max-width:654px) {
+  #nav-list a:before {top:1.1em;}  
+}
+@media screen and (max-width:640px) {
+    #nav-list {margin-left: 23%;width:56%}
+    #nav-list a:before {top:1.2em;}
+} 
+@media screen and (max-width:630px) {
+    #nav-list {width:58%}
+}
+@media screen and (max-width:625px) {
+    #nav-list {margin-left: 22%;width:59%}
+    #nav-list a:before {top:1.25em;}
+    #side-nav {display: none}
+}
+@media screen and (max-width:617px) {
+    #nav-list {width:60%}
+    #nav-list a:before {top:1.2em;}
+}
+
+@media screen and (max-width:590px) {
+    #nav-list {width:62%}
+}
+@media screen and (max-width:569px) {
+    #nav-list {width:64%;margin-left: 20%}
+}
+@media screen and (max-width:545px) {
+    #nav-list {width:66%;margin-left: 19%}
+}
+@media screen and (max-width:525px) {
+    #side-nav {display:none;}
+}
+
+#after-click ul {
+    list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#666; 
+	overflow:hidden;
+}
+#after-click li a {
+    text-decoration: none;
+    display:block;
+    color:white;
+	text-decoration:none;
+	padding:14px;
+        padding-left: 35px;
+}
+#after-click li a:hover {
+    display: block;
+    	background-color:#f1f1f1;
+	color:black;
+}
+#after-click {display:none;}
+@media screen and (min-width:822px) {
+    #after-click {display:none;}
+}
+
+#side-nav-horizontal {
+    width:100%;    
+    height:51px;
+    display:none;
+}
+@media screen and (max-width:625px) {
+    #side-nav-horizontal {display: block;}
+}
+#nav-heading, #nav-list-horizontal {
+    float:left;
+}
+#nav-heading {
+    padding-top: 4px;
+    padding-left: 2px;
+}
+#nav-heading p {
+    border-bottom: 4px solid #666;
+    font-size: 20px;
+}
+#nav-list-horizontal {
+    overflow: hidden;
+    margin-left: 10px;
+    background-color: #c0c0c0;
+
+}
+#nav-list-horizontal li {
+    list-style-type: none;
+    float:left;
+    display: block;
+}
+
+#nav-list-horizontal a {
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding:12px;
+}
+#nav-list-horizontal a:hover {
+    background-color: #666;
+    color:white;
+    overflow: hidden;
+}
+
+#horizontal-first, #horizontal-second {
+    float:left;
+}
+@media screen and (max-width:560px) {
+    #side-nav-horizontal {height:94px;}
+    #nav-heading {margin-left: 40%; padding:1px 0 4px 0}
+    #nav-list-horizontal {margin-left: 10%;}
+}
+@media screen and (max-width:540px) {
+    #nav-list-horizontal {margin-left: 9%;}
+    #nav-heading {margin-left: 38%}
+}
+@media screen and (max-width:530px) {
+    #nav-list-horizontal {margin-left: 8%;}
+}
+@media screen and (max-width:510px) {
+    #nav-list-horizontal {margin-left: 6%;}
+}
+@media screen and (max-width:490px) {
+    #nav-list-horizontal {margin-left: 5%;}
+}
+@media screen and (max-width:480px) {
+    #nav-list-horizontal {margin-left: 4%;}
+}
+@media screen and (max-width:470px) {
+    #nav-list-horizontal {margin-left: 3%;}
+}
+@media screen and (max-width:462px) {
+    #nav-list-horizontal {margin-left: 0%;}
+}
+/*@media screen and (max-width:450px) {
+    #nav-list-horizontal {margin-left: 0%;}
+}*/
+@media screen and (max-width:448px) {
+    #nav-list-horizontal a {font-size: 14px;}
+    #nav-list-horizontal {margin-left: 5%}
+    #side-nav-horizontal {height:92px;}
+}
+@media screen and (max-width:432px) {
+    #nav-list-horizontal {margin-left: 4%;}
+}
+@media screen and (max-width:423px) {
+    #nav-list-horizontal {margin-left: 2%;}
+}
+@media screen and (max-width:415px) {
+    #nav-list-horizontal {margin-left: 0%;}
+}
+@media screen and (max-width:406px) {
+    #nav-list-horizontal li {float:none}
+    #horizontal-first, #horizontal-second { width:100%}
+    #horizontal-first li, #horizontal-second li {text-align: center; /*border: 1px solid #000;*/ width:50%; float:left;}
+    #nav-list-horizontal {width:100%}
+    #side-nav-horizontal {height:142px;}
+}
+@media screen and (max-width:368px) {
+    #nav-heading {margin-left: 36%;}
+}
+@media screen and (max-width:320px) {
+    #nav-heading {margin-left: 35%;}
+}
+@media screen and (max-width:315px) {
+    #side-nav-horizontal {height:162px;}
+}
+        #side-nav {
+    width:30%;
+    height:auto;
+}
+        #main-content {
+    width:70%;
+    height:auto;
+}
+            #side-nav{float:left;}
+            
+    #nav-list {
+    margin: 9% 0 0 28%;
+    width:50%;
+    height: auto;
+}
+         #side-nav-horizontal {
+    width:100%;    
+    height:51px;
+    display:none;
+}
+#nav-heading, #nav-list-horizontal {
+    float:left;
+}
+#nav-heading {
+    padding-top: 4px;
+    padding-left: 2px;
+}
+   #nav-list-horizontal {
+    overflow: hidden;
+    margin-left: 10px;
+    background-color: #c0c0c0;
+
+}
+#horizontal-first, #horizontal-second {
+    float:left;
+}
+        
+       /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 28, 2017, 10:51:15 AM
+    Author     : Saumya Joshi
+*/
+

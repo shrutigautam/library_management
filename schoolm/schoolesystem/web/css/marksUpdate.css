@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2017, 7:25:34 PM
+    Author     : This PC
+*/
+
+#main-content {
+    width:70%;
+    height:auto;
+}
+#content-div1 {
+    margin:4% 0 0 1%;
+    border:1px solid #c0c0c0;
+    height:120px;
+    width:80%
+}
+#content-div1-sub1 {
+    width:28%;
+    /*height:auto;*/
+    margin-left:1%;
+    margin-top:1%;
+}
+#session-select {
+    margin-top:1%;
+}
+#session-select select {
+    margin-left: 20px;
+    width:100px;
+}
+#class-select {
+    margin-top: 6%;
+}
+#class-select select {
+    margin-left: 38px;
+    width:100px;
+}
+#section-select {
+    margin-top: 6%;
+}
+#section-select select {
+    margin-left: 20px;
+    width:100px;
+}
+#content-div1-sub2 {
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 28%;
+}
+
+#subject-select {
+    margin-top:1%;
+}
+#subject-select select {
+    margin-left: 50px;
+    width:100px;
+}
+#exam-select {
+    margin-top:6%;
+}
+#exam-select select {
+    margin-left: 22px;
+    width:100px;
+}
+
+#date-select {
+    margin-top:6%;
+}
+#date-select select {
+    margin-left: 40px;
+    width:100px;
+}
+#content-div1-sub3 {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 1%;
+    width: 30%;
+}
+#content-div1-sub1 ,#content-div1-sub2 ,#content-div1-sub3 {
+    float:left;
+}
+#faculty-detail {
+    margin-top:1%;
+}
+#faculty-detail select {
+    margin-left: 70px;
+    width:100px;
+}
+#list-based-select {
+    margin-top:6%;
+}
+#list-based-select select {
+    margin-left: 22px;
+    width:100px;
+}
+#btn {
+    margin-top: 1%;
+    height:24px;
+    
+}
+#button {
+    margin-top:2%;
+    margin-left: 10%;
+    width:100px;
+    height:22px;   
+    color:#fff;
+    border-style:none;
+    background: -webkit-linear-gradient(lightblue, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightblue, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightblue, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightblue, blue); /* Standard syntax (must be last) */
+}

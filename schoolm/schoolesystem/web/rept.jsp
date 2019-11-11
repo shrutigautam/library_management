@@ -1,0 +1,111 @@
+
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
+        <link rel="stylesheet" type="text/css" href="tile.css" />
+        <link rel="stylesheet" href="css/search_enquiry.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <script src="js/jquery.min.js"></script>
+        <script>
+            
+            var req;
+            function special()
+            {
+            var a=document.emp.d1.value;
+            var b=document.emp.d2.value;
+            if(window.XMLHttpRequest){
+                req=new XMLHttpRequest();
+            }
+            else{
+                req=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            
+            req.onreadystatechange=function(){
+            if(req.readyState == 4 && req.status == 200){
+                document.getElementById("display").innerHTML = req.responseText;
+                
+                    
+                }
+                req.open("GET","report.java?na1="+a+"&na2="+b,true);
+            req.send();
+            }
+            
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="logo"><a href="#">Dash<span>Board</span></a>
+            </div>
+        </div>
+        <div id="container">
+            
+            <div class="content">
+                <div id="enq_fields" >
+                    <form action="rep" method="get" name="emp">
+                    <div id="enq_fields_div1">
+                    
+                    <div id="class">
+                        Class:
+                        <select id="class_box">
+                            <option value="select">Select</option>
+                        </select>
+                    </div>
+                    <div id="category">
+                        Category: 
+                        <select>
+                            <option value="select">Select</option>
+                            <option value="">GEN</option>
+                            <option value="">OBC</option>
+                            <option value="">SC</option>
+                            <option value="">ST</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div id="enq_fields_div2">
+                    <div id="date_to">
+                        Date To: <input type="date" value="" name="d1" id="d1">
+                    </div>
+                    <div id="date_from">
+                        Date From: <input type="date" value="" name="d2" id="d2">
+                    </div>
+                </div>
+
+                <div id="enq_search">
+                    <input id="enq_search_btn" type="submit" value="Search">
+                </div>
+                </form>
+                  <hr style="margin-left: 5%; border-color: #ccc;">  
+                  <div id="enq_table">
+                <table>
+                    <tr id="table_heading">
+                        <th class="enq_no">Enquiry No.</th>
+                        <th class="name">Name</th>
+                        <th class="fname">Father Name</th>
+                        <th class="class">Class</th>
+                        <th class="mobile">Mobile</th>
+                        <th class="city">City</th>
+                        <th class="present_address">Present Address</th>
+                        
+                    </tr>
+
+                </table><div id="display">
+                    
+                </div>
+            </div>
+            <div id="enq_print">
+                    
+                    <img id="enq_print_btn" src="images/PDF.png" width="60" height="60" alt="PDF"/>
+                    &nbsp;
+                    <img src="images/Excel.png" width="80" height="60" alt="Excel"/>
+
+                </div>
+            </div>
+                 
+            </div>
+                </body>
+                </html>

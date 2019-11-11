@@ -1,0 +1,133 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 29, 2016, 7:50:20 AM
+    Author     : guddu
+*/
+
+         .list6{
+             display: none;
+         }
+         .list5{
+             display: none;
+         }
+         .list4{
+             display: none;
+         }
+         .list3{
+             display: none;
+         }
+         .list2{
+             display: none;
+         }
+         .list{
+             display: none;
+         
+         }
+         #header{
+             margin: 0px;
+         }
+         .headerP{
+             border: outset black; 
+             width: 100%; 
+             background-color: #990000;
+             margin: 0px; 
+             border-radius: 8px;
+         }
+         .admission{
+             border: 1px dotted white; 
+             border-radius: 8px;
+             display: inline-block; 
+             list-style: none; 
+             color: #ffffff; 
+             margin: 5px 0px; padding: 2px 10px; 
+             cursor: pointer;
+         }
+         .student{
+             border: 1px dotted white;
+             border-radius: 8px; 
+             display: inline-block; 
+             list-style: none;  
+             color: #ffffff;
+             margin: 5px 15px;
+             padding: 2px 10px; 
+             cursor: pointer;
+         }
+         .security{
+             border: 1px dotted white;
+             border-radius: 8px; 
+             display: inline-block; 
+             list-style: none; 
+             color: #ffffff;
+             margin: 5px 0px;
+             padding: 2px 10px;
+             cursor: pointer;
+         }
+         #mainpart{
+             width: 100%; 
+             border: outset black; 
+             margin-top: 2px; 
+             border-radius: 8px; 
+             height: 900px;
+         }
+         .usermanagement{
+             background-color: #000066;
+             color: #ffffff;
+             height: 20px;
+             padding-left: 20px;
+             padding-top: 5px;
+             padding-bottom: 10px;
+         }
+         .lastedited{
+              margin-left: 250px;
+         }
+         .userbutton{
+             background-color: #0000FF;
+             color: #ffffff;
+             height: 20px; 
+             padding-left: 20px; 
+             padding-top: 5px; 
+             padding-bottom: 10px;
+             margin-top: 3px;
+         }
+         .userform{
+             margin-top: 5px; 
+             margin-left: 2%;
+             float: left; 
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 12px; 
+             color:  #990000 ;
+         }
+         .formcontent{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 12px;
+              color:  #990000 ;
+         }
+         .usertable{
+             width: 590px;
+             height: 390px; 
+             margin-top: 5px;
+             margin-left: 1%;
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 12px; 
+             color:  #990000;  
+             border: 2px outset aqua;
+             overflow: scroll;
+         }
+         .treeview{
+             margin-top: 5px;
+             margin-bottom: 5px; 
+             margin-left: 50%; 
+             font-family: Arial, Helvetica, sans-serif;
+             font-size: 12px;
+             color:  #990000;
+             border:2px outset gray;
+             height: 818px;
+         }
+         .tree{
+             list-style:none;
+             cursor: pointer
+         }

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,400italic,600italic");
+
+.tile
+{ padding:1px;
+  height:32.3%;
+  width:14.5%;
+  float:left;
+  border:2px solid #990000;
+  display:inline-block;
+  text-align:center;
+}
+
+img
+{ 
+   max-height:50%;
+   max-width:50%;
+   margin:20px;
+}
+
+.caption
+{
+display:block;
+font-size:15px;
+font-family:'Open Sans';
+color:#990000;
+
+}
+
+.tile a
+{
+	 transition:0.2s;  
+   -webkit-transition:0.2s; 
+   -moz-transition:0.2s;   
+   -o-transition:0.2s;
+}
+.tile:hover
+{
+	border:2px solid #000066;
+	background-color:#DBD7D7;
+}
+.tile:hover span
+{
+	color:#2c3e50;
+}

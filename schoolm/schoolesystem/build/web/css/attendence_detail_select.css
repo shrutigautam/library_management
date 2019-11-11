@@ -1,0 +1,552 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 6, 2016, 4:36:56 PM
+    Author     : hp
+*/
+#main-content {
+    /*//border: 1px solid blue;*/
+    width:70%;
+    height:auto;
+}
+
+/*first division of main content*/
+
+#content-div1 {
+    margin:4% 0 0 1%;
+    border:1px solid #c0c0c0;
+    height:128px;
+    width:92%
+}
+#content-div1-sub1 ,#content-div1-sub2 {
+    float:left;
+}
+
+/*first sub division of first division*/
+
+#content-div1-sub1 {
+    /*//border: 1px solid black;*/
+    width:33%;
+    /*height:auto;*/
+    margin-left:1%;
+    margin-top:1%;
+}
+#session-select {
+    /*//border: 1px solid saddlebrown;*/
+}
+#session-select select {
+    margin-left: 30px;
+    width:100px;
+}
+#class-select {
+    /*//border: 1px solid slateblue;*/
+    margin-top: 6%;
+}
+#class-select select {
+    margin-left: 48px;
+    width:100px;
+}
+#section-select {
+    margin-top: 6%;
+    /*//border: 1px solid peru;*/
+}
+#section-select select {
+    margin-left: 32px;
+    width:100px;
+}
+
+/*second sub division of first division*/
+
+#content-div1-sub2 {
+    margin-top: 1%;
+    margin-right: 1%;
+    /*//border:1px solid orange;*/
+    width: 65%;
+}
+#faculty-detail {
+    /*//border: 1px solid rosybrown;*/
+}
+#faculty-detail input {
+    height:22px;
+}
+#faculty-detail #input-first {
+    margin-left: 80px;
+}
+#subject-select {
+    margin-top:3%;
+    /*//border: 1px solid red;*/
+}
+#subject-select select {
+    margin-left: 36px;
+    width:100px;
+}
+#type-select {
+    margin-top: 3.1%;
+    /*//border: 1px solid plum;*/
+}
+#type-select select {
+    margin-left: 98px;
+    width:100px;
+}
+
+/*second division of main content*/
+
+#content-div2 {
+    border: 1px solid #c0c0c0 ;
+    margin:2% 0 0 1%;
+    width:92%;
+    height: 122px;
+}
+#content-div2-sub1, #content-div2-sub2 {
+    float:left;
+}
+
+/*first sub division of second division*/
+
+#content-div2-sub1 {
+/*    //border: 1px solid #2196F3;*/
+    width: 33%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+#date-select input {
+    margin-left: 52px;
+    height: 22px;
+    width:160px;
+}
+#attempts-select {
+    margin-top: 6%;
+}
+#attempts-select select {
+    margin-left: 19px;
+    width:100px;
+}
+
+/*second sub division of second division*/
+
+#content-div2-sub2 {
+    margin-top: 1%;
+    margin-right: 1%;
+    width:65%;
+    /*//border: 1px solid orange;*/
+}
+#status-select select {
+    width:100px;
+    margin-left: 87px;
+}
+#list-based-select {
+    margin-top: 3%;
+}
+#list-based-select select{
+    margin-left: 32px;
+}
+#btn {
+    /*//border: 1px solid green;*/
+    margin-top: 10%;
+    height:24px;
+    
+}
+#button {
+    margin-left: 25%;
+    width:150px;
+    height:22px;   
+    /*//margin-top: 2%;*/
+	/*background-color:#3183ae;*/
+    color:#fff;
+    border-style:none;
+    background: -webkit-linear-gradient(lightblue, blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightblue, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightblue, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightblue, blue); /* Standard syntax (must be last) */
+}
+
+
+@media screen and (max-width:1340px) {
+    #content-div1 {height:157px;}
+    #class-select {margin-top: 16%}
+    #btn {margin-left: 30px;}
+    #faculty-detail #input-second {margin-left: 140px; margin-top: 1%;}
+}
+@media screen and (max-width:1300px) {
+    #btn {margin-top: 10.5%; margin-left: 35px;}
+}
+@media screen and (max-width:1266px) {
+    #subject-select {margin-top: 4%}
+    #class-select {margin-top: 17%}
+    #btn {margin-top: 10.7%; margin-left: 45px;}
+    /*//#faculty-detail, #subject-select, #type-select, #status-select, #list-based-select {margin-left: 2%;}*/
+    #content-div1-sub1, #content-div2-sub1 {width: 35%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 63%;}
+}
+@media screen and (max-width:1241px){
+    #btn {margin-top: 10.9%; margin-left: 48px}
+}
+@media screen and (max-width:1189px) {
+    #class-select {margin-top: 17.5%}
+    #subject-select {margin-top: 4.5%}
+    #list-based-select {margin-top: 3.5%}
+    #btn {margin-top: 11.5%; margin-left: 50px;}
+    #content-div1-sub1, #content-div2-sub1 {width: 36%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 62%;}
+}
+@media screen and (max-width:1154px){
+    #btn {margin-top: 12%; margin-left: 60px;}
+    #content-div1-sub1, #content-div2-sub1 {width: 37%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 61%;}
+}
+@media screen and (max-width:1115px){
+    #subject-select {margin-top: 5%}
+    #type-select {margin-top: 3.7%}
+    #list-based-select {margin-top: 3.8%}
+    #btn {margin-top: 12.3%; margin-left: 70px;}
+    #content-div1-sub1, #content-div2-sub1 {width: 38%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 60%;}
+}
+@media screen and (max-width:1080px) {
+    #content-div1-sub1, #content-div2-sub1 {width: 39%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 59%;}
+}
+@media screen and (max-width:1050px) {
+    #class-select {margin-top: 17%}
+    #btn {margin-top: 12.7%; margin-left: 75px;}
+    #content-div1-sub1, #content-div2-sub1 {width: 41%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 57%;}
+}
+@media screen and (max-width:1010px) {
+    #subject-select {margin-top: 5.9%}
+    #type-select {margin-top: 4.5%}
+    #list-based-select {margin-top: 4.5%}
+    #btn {margin-top: 13.3%; margin-left: 80px;}
+    #content-div1-sub1, #content-div2-sub1 {width: 43%;}
+    #content-div1-sub2, #content-div2-sub2 {width: 55%;}
+}
+@media screen and (max-width:988px) {
+    #content-div1 {height:300px;}
+    #content-div1, #content-div2 {width: 95%;}
+    #content-div1-sub1, #content-div1-sub2 {float:none;}
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 15%}
+    #content-div1-sub1, #content-div2-sub1 {width:70%;}
+    #content-div1-sub2, #content-div2-sub2 {margin-top: 2%;width: 70%;}
+    #session-select select {margin-left: 77px;}
+    #class-select {margin-top: 6%;}
+    #class-select select {margin-left: 95px;}
+    #section-select select {margin-left: 79px;}
+    #subject-select {margin-top:5%;}
+   
+    #btn {margin-top: 28%; position: relative}
+    #button {margin-left: 28%}
+    #content-div2 {height:210px;}
+    #date-select input {margin-left: 98px;}
+    #attempts-select select {margin-left: 65px}
+}
+@media screen and (max-width:941px) {
+    #btn {margin-top: 30%}
+    #button {margin-left: 29%}
+    #content-div1 {height:292px;}
+}
+@media screen and (max-width:900px) {
+    #btn {margin-top: 31%}
+    #button {margin-left: 30%}
+    #content-div1 {height:288px;}
+}
+@media screen and (max-width:860px) {
+    #btn {margin-top: 32%}
+    #button {margin-left: 31%}
+    #content-div1 {height:284px;}
+}
+@media screen and (max-width:821px) {
+    #btn {margin-top: 33%}
+    #button {margin-left: 31.5%}
+    #content-div1 {height:280px;}
+}
+@media screen and (max-width:790px) {
+    #content-div1-sub2 {width:85%}
+    #content-div2 {height: 200px}
+}
+@media screen and (max-width:754px) {
+    #content-div1 {height: 277px}
+    #btn {margin-top: 34.5%}
+    #button {margin-left: 33%}
+    
+}
+@media screen and (max-width:725px) {
+    #content-div1 {height: 273px}
+    #btn {margin-top: 35.5%}
+    #button {margin-left: 34%}
+}
+@media screen and (max-width:699px) {
+    #btn {margin-top: 36.5%}
+    #button {margin-left: 33%}
+    #content-div1-sub2, #content-div2-sub1 {width:90%}
+    #attempts-select {margin-top: 4%}
+    #list-based-select {margin-top: 5%}
+}
+@media screen and (max-width:660px) {
+    #content-div2 {height:190px;}
+    #button {margin-left: 31%}
+}
+@media screen and (max-width:640px) {
+    #btn {margin-top: 37%}
+    #button {margin-left: 30%}
+}
+@media screen and (max-width:625px) {
+    #content-div1, #content-div2 {width: 98%}
+    #main-content {width: 100%}
+    #content-div2 {height: 210px;}
+    #btn {margin-top: 29%}
+    #button {margin-left: 32%}
+}
+@media screen and (max-width:617px) {
+    #btn {margin-top: 30%}
+    #button {margin-left: 30%}
+}
+
+@media screen and (max-width:590px) {
+    #btn {margin-top: 31%}
+}
+@media screen and (max-width:569px) {
+    #content-div2 {height: 204px;}
+}
+@media screen and (max-width:545px) {
+    #btn {margin-top: 32%}
+    #button {margin-left: 29%}
+}
+@media screen and (max-width:535px) {
+    #btn {margin-top: 33%}
+}
+@media screen and (max-width:525px) {
+    #btn {margin-top: 34%}
+}
+
+#after-click ul {
+    list-style-type:none;
+	margin:0;
+	padding:0;
+	background-color:#666; 
+	overflow:hidden;
+}
+#after-click li a {
+    text-decoration: none;
+    display:block;
+    color:white;
+	text-decoration:none;
+	padding:14px;
+        padding-left: 35px;
+}
+#after-click li a:hover {
+    display: block;
+    	background-color:#f1f1f1;
+	color:black;
+}
+#after-click {display:none;}
+@media screen and (min-width:822px) {
+    #after-click {display:none;}
+}
+
+#side-nav-horizontal {
+    /*//border: 1px solid #00ffff;*/
+    width:100%;    
+    height:51px;
+    display:none;
+}
+@media screen and (max-width:625px) {
+    #side-nav-horizontal {display: block;}
+}
+#nav-heading, #nav-list-horizontal {
+    float:left;
+}
+#nav-heading {
+    padding-top: 4px;
+    padding-left: 2px;
+}
+#nav-heading p {
+    border-bottom: 4px solid #666;
+    font-size: 20px;
+}
+#nav-list-horizontal {
+    /*//border: 1px solid red;*/
+    overflow: hidden;
+    margin-left: 10px;
+    background-color: #c0c0c0;
+
+}
+#nav-list-horizontal li {
+    list-style-type: none;
+    float:left;
+    display: block;
+}
+
+#nav-list-horizontal a {
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding:12px;
+}
+#nav-list-horizontal a:hover {
+    background-color: #666;
+    color:white;
+    overflow: hidden;
+}
+
+#horizontal-first, #horizontal-second {
+    float:left;
+    /*//border: 1px solid #00ffff;*/
+}
+@media screen and (max-width:560px) {
+    #side-nav-horizontal {height:94px;}
+    #nav-heading {margin-left: 40%; padding:1px 0 4px 0}
+    #nav-list-horizontal {margin-left: 10%;}
+}
+@media screen and (max-width:540px) {
+    #nav-list-horizontal {margin-left: 9%;}
+    #nav-heading {margin-left: 38%}
+}
+@media screen and (max-width:530px) {
+    #nav-list-horizontal {margin-left: 8%;}
+}
+@media screen and (max-width:510px) {
+    #nav-list-horizontal {margin-left: 6%;}
+    
+}
+@media screen and (max-width:490px) {
+    #nav-list-horizontal {margin-left: 5%;}
+    #btn {margin-top: 35%}
+}
+@media screen and (max-width:480px) {
+    #nav-list-horizontal {margin-left: 4%;}
+    #content-div1, #content-div2 {width: 97%;}
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 13%}
+}
+@media screen and (max-width:470px) {
+    #nav-list-horizontal {margin-left: 3%;}
+    #btn {margin-top: 36%}
+    #content-div2 {height: 194px;}
+    
+}
+@media screen and (max-width:462px) {
+    #nav-list-horizontal {margin-left: 0%;}
+}
+/*@media screen and (max-width:450px) {
+    #nav-list-horizontal {margin-left: 0%;}
+}*/
+@media screen and (max-width:448px) {
+    #nav-list-horizontal a {font-size: 14px;}
+    #nav-list-horizontal {margin-left: 5%}
+    #side-nav-horizontal {height:92px;}
+    #btn {margin-top: 37%}
+    #button {margin-left: 27%}
+    #content-div2 {height: 190px;}
+}
+@media screen and (max-width:432px) {
+    #nav-list-horizontal {margin-left: 4%;}
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 11%}
+    #btn {margin-top: 38%}
+    #button {margin-left: 22%}
+}
+@media screen and (max-width:423px) {
+    #nav-list-horizontal {margin-left: 2%;}
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 10%}
+    #btn {margin-top: 39%}
+    #button {margin-left: 20%}
+}
+@media screen and (max-width:415px) {
+    #nav-list-horizontal {margin-left: 0%;}
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 7%}
+    #content-div1-sub2, #content-div2-sub2 {width:100%}
+    #btn {margin-top: 40%}
+}
+@media screen and (max-width:406px) {
+    #nav-list-horizontal li {float:none}
+    #horizontal-first, #horizontal-second { width:100%}
+    #horizontal-first li, #horizontal-second li {text-align: center; /*border: 1px solid #000;*/ width:50%; float:left;}
+    #nav-list-horizontal {width:100%}
+    #side-nav-horizontal {height:142px;}
+    #main-content {margin-left: 0%}
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 4%}
+    #content-div1, #content-div2 {width: 97%;margin-left: 1%}
+    #content-div1-sub1, #content-div2-sub1 {width: 90%}
+    #content-div1-sub1, #content-div2-sub1 {margin-top: 2%}
+}
+@media screen and (max-width:398px) {
+    #content-div1-sub1, #content-div1-sub2, #content-div2-sub1, #content-div2-sub2  {margin-left: 2%}
+    #btn {margin-top: 41%}
+    #button {margin-left: 18%}
+}
+@media screen and (max-width:389px) {
+    /*//#main-content {height: 700px}*/
+    
+    #content-div1 {height:378px}
+    #content-div1-sub1 {height: 163px;}
+    #session-select select {position: relative; top:25px; right:140px}
+    #class-select {margin-top: 10%}
+    #class-select select {position: relative; top:25px; right:140px}
+    #section-select {margin-top: 10%}
+    #section-select select {position: relative; top:25px; right:140px}
+    
+    #content-div1-sub2 {height: 190px;}
+    #faculty-detail input {position: relative; top:25px; right:138px}
+    #subject-select {margin-top: 9%}
+    #subject-select select {position: relative; top:26px; right:140px}
+    #type-select {margin-top: 9%}
+    #type-select select {position: relative; top:26px; right:140px}
+    
+    #content-div2 {height: 272px}
+    #content-div2-sub1 {height:100px}
+    #date-select input {position: relative; top:25px; right:138px}
+    #attempts-select {margin-top: 9%}
+    #attempts-select select {position: relative; top:25px; right:139px}
+    
+    #content-div2-sub2 {height:100px}
+    #status-select select {position:relative; top:23px; right:139px}
+    #list-based-select {margin-top: 8%}
+    #list-based-select select {position: relative; top: 23px; right: 139px}
+
+    #btn{margin-top: 64%; margin-left: 0%}
+    #button {margin-left: 30%}
+}
+@media screen and (max-width:378px) {
+    #faculty-detail input {position: relative; top:25px; right:134px}
+    #faculty-detail #input-second {position: relative; right: 134px}
+    #subject-select {margin-top: 9%}
+    #subject-select select {position: relative; top:26px; right:140px}
+    #btn{margin-top: 66%;}
+}
+@media screen and (max-width:368px) {
+    #nav-heading {margin-left: 36%;}
+    #faculty-detail input {position: relative; top:25px; right:130px}
+    #faculty-detail #input-second {position: relative; right: 130px}
+    #btn{margin-top: 69%;}
+}
+@media screen and (max-width:362px) {
+    #faculty-detail input {position: relative; top:6px; right:70px}
+    #subject-select {margin-top: 4%}
+    #date-select input {position: relative; top:25px; right:134px}
+    #btn{margin-top: 70%;}
+}
+@media screen and (max-width:355px) {
+    #btn{margin-top: 71%;}
+}
+@media screen and (max-width:348px) {
+    #date-select input {position: relative; top:5px; right:90px}
+    #attempts-select {margin-top: 2%}
+    #btn{margin-top: 72%;}
+}
+@media screen and (max-width:340px) {
+    #btn{margin-top: 73.5%;}
+}
+@media screen and (max-width:330px) {
+    #btn{margin-top: 75.5%;}
+}
+@media screen and (max-width:320px) {
+    #nav-heading {margin-left: 35%;}
+    #btn{margin-top: 77.5%;}
+}
+@media screen and (max-width:315px) {
+    #first-attendence a {height:66px; padding-top: 24px;}
+    #side-nav-horizontal {height:162px;}
+    #btn{margin-top: 78.5%;}
+
+}

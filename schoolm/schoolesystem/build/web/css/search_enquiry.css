@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 19, 2016, 11:51:28 AM
+    Author     : hp
+*/
+*{margin: 0; padding: 0}
+#main-content {
+    width:70%;
+}
+
+#enq_fields_div1, #enq_fields_div2 {
+    float:left;
+    width: 35%;
+    margin-left: 1%;
+    margin-top: 1%;
+    
+}
+
+#class_box {
+    margin-left: 50px;
+    width: 100px;
+    margin-bottom: 14px;
+}
+
+#category select {
+    margin-left: 22px;
+    width: 100px;
+}
+#date_to {
+    margin-bottom: 8px;
+}
+#date_from input {
+    margin-left: 20px;
+}
+#date_to input {
+    margin-left: 43px;
+}
+#enq_search_btn {
+    margin-left:35%;
+    margin-top: 15px;
+    width: 70px;
+}
+
+#enq_table {
+    border: 1px solid #a0a0a0;
+    margin-top: 20px;
+    overflow-y: auto;
+    height:300px;
+    width:auto;
+}
+#table_heading {
+    background-color: #d9d9d9;
+    border: 0px;
+}
+.enq_no, .name, .fname, .class, .mobile, .present_address, .city {
+    border-right: 1px solid white;
+}
+.enq_no {
+    width: 11%;
+}
+.name {
+    width: 20%;
+}
+.fname {
+    width: 18%;
+}
+.present_address {
+    width: 22%;
+}
+.city {
+    width: 10%;
+}
+#enq_print_btn {
+    
+    margin-top: 10px;
+    margin-left: 10px;
+  
+}
